@@ -39,6 +39,10 @@ public class Application implements Serializable {
         }
     }
 
+    public String getHost() {
+        return System.getProperty("jboss.host.name");
+    }
+
     public void submit() {
         System.out.println("[Submit]");
     }
