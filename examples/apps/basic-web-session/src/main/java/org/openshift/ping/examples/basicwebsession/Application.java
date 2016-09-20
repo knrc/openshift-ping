@@ -13,9 +13,9 @@ public class Application {
 
     private HttpSession getHttpSession() {
         FacesContext facesContext = FacesContext.getCurrentInstance();
-        //System.out.println("********** facesContext: " + facesContext);
+        System.out.println("********** facesContext: " + facesContext);
         HttpSession httpSession = (HttpSession)facesContext.getExternalContext().getSession(false);
-        //System.out.println("********** httpSession: " + httpSession);
+        System.out.println("********** httpSession: " + httpSession);
         return httpSession;
     }
 
@@ -38,7 +38,7 @@ public class Application {
     }
 
     public void submit() {
-        //System.out.println("[Submit]");
+        System.out.println("[Submit]");
     }
 
 }
