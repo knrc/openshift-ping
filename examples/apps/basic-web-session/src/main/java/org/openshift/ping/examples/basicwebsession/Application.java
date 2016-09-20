@@ -5,9 +5,11 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
+import java.io.Serializable;
+
 @ManagedBean(name = "app")
 @SessionScoped
-public class Application {
+public class Application implements Serializable {
 
     private static final String NAME = "name";
 
